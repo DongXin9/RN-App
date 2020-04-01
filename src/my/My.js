@@ -99,7 +99,6 @@ export default class My extends Component {
         });
     }
     exit=()=>{
-        // AsyncStorage.clear()
         AsyncStorage.removeItem('user')
         .then(()=>{
             Actions.login()
